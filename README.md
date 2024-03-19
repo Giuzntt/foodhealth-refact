@@ -1,30 +1,8 @@
-# React + TypeScript + Vite
+# 🥗 Food Health
+## Sobre o Projeto 📖
+O Food Health é um aplicativo desenvolvido em React destinado a promover uma alimentação saudável e balanceada. Nosso objetivo é ajudar nossos usuários a fazer escolhas alimentares mais conscientes, fornecendo informações nutricionais detalhadas, receitas saudáveis e dicas de dieta personalizadas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Funcionalidades 🌟
+Consulta de Informações Nutricionais: Busque alimentos e veja detalhes sobre suas calorias, macronutrientes e vitaminas.
+Receitas Saudáveis: Acesse uma variedade de receitas que combinam sabor e saúde.
+Planejamento de Dieta: Crie e gerencie seus planos alimentares semanais de acordo com seus objetivos de saúde.
