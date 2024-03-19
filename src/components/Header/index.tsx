@@ -99,11 +99,11 @@ const Header = ({ itensMenu }: IHeaderProps) => {
                 <span className="text-white font-bold uppercase">Logar</span>
               </Link>
             </Button>
-            <Button asChild>
-              <Link
-                to="/register"
-                className="bg-transparent  border-2 border-color-apple-logo hover:bg-primary-dark transition-all duration-300 ease-in-out hover:bg-color-apple-logo rounded-3xl px-8"
-              >
+            <Button
+              asChild
+              className="bg-transparent  border-2 border-color-apple-logo hover:bg-primary-dark transition-all duration-300 ease-in-out hover:bg-color-apple-logo rounded-3xl px-8"
+            >
+              <Link to="/register">
                 <span
                   className="text-white font-bold uppercase
                      transition-all duration-300 ease-in-out     
