@@ -5,7 +5,6 @@ import { prompts } from "@/constants/prompts";
 
 import { Typewriter } from "react-simple-typewriter";
 import { CarouselDApiDemo } from "./components/Carrousel";
-import { WavyBackground } from "@/components/WaveWrapper";
 import Tag from "@/components/Tag";
 
 const HomePage = () => {
