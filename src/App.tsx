@@ -14,7 +14,9 @@ const App = () => {
   return (
     <BrowserRouter basename="/">
       <Header itensMenu={itensMenu} />
-      <RoutesApp />
+      <div className="my-32">
+        <RoutesApp />
+      </div>
     </BrowserRouter>
   );
 };

@@ -21,6 +21,7 @@ module.exports = {
         "color-apple-logo": "#FF5C5C",
         "background-header": "#1ADC58",
         "color-typograph-header": "#FF5C5C",
+        "background-tag": "#F98181",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

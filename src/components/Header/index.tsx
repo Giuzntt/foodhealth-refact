@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { GiShinyApple } from "react-icons/gi";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useMediaQuery } from "react-responsive";
 import { MdClose } from "react-icons/md";
 import { Button } from "@/components/ui/button";
+import ContainerWrapper from "../ContainerWrapper";
 
 interface IHeaderProps {
   itensMenu: {
@@ -24,17 +24,25 @@ const Header = ({ itensMenu }: IHeaderProps) => {
     <header
       className="
         fixed top-0 left-0 right-0 z-50  h-32 from-background-header to-green-500 bg-gradient-to-r
-        shadow-xl
-        
+        shadow-xl   w-full 
         "
     >
-      <div className="container mx-auto flex items-center justify-between h-full">
+      <ContainerWrapper
+        className="
+        flex items-center justify-between h-full w-full   px-8
+        "
+      >
         <h1
           className="text-3xl font-bold text-gray-200
             flex items-center justify-center 
         "
         >
-          <GiShinyApple className="text-color-apple-logo" /> Food
+          <img
+            src="/images/logo-foodhealth.png"
+            alt="logo"
+            className="w-8 h-8 object-cover mr-2"
+          />
+          Food
           <span className="text-white font-semibold">Health</span>
         </h1>
 
@@ -116,7 +124,7 @@ const Header = ({ itensMenu }: IHeaderProps) => {
             </Button>
           </div>
         )}
-      </div>
+      </ContainerWrapper>
     </header>
   );
 };
