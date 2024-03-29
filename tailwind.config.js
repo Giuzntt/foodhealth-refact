@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         "color-apple-logo": "#FF5C5C",
         "background-header": "#1ADC58",
+        "section-home": "rgba(26, 220, 88, 10)",
         "color-typograph-header": "#FF5C5C",
         "background-tag": "#F98181",
 
@@ -27,6 +28,7 @@ module.exports = {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
+
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",

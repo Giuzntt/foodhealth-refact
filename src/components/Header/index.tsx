@@ -101,7 +101,7 @@ const Header = ({ itensMenu }: IHeaderProps) => {
           <div className="flex items-center justify-center h-full gap-5   ">
             <Button
               asChild
-              className="bg-color-apple-logo hover:bg-primary-dark transition-all duration-300 ease-in-out rounded-3xl px-8"
+              className="bg-color-apple-logo hover:bg-primary-dark transition-all duration-300 ease-in-out rounded px-8"
             >
               <Link to="/login">
                 <span className="text-white font-bold uppercase">Logar</span>
@@ -109,7 +109,7 @@ const Header = ({ itensMenu }: IHeaderProps) => {
             </Button>
             <Button
               asChild
-              className="bg-transparent  border-2 border-color-apple-logo hover:bg-primary-dark transition-all duration-300 ease-in-out hover:bg-color-apple-logo rounded-3xl px-8"
+              className="bg-transparent  border-2 border-color-apple-logo hover:bg-primary-dark transition-all duration-300 ease-in-out hover:bg-color-apple-logo rounded px-8"
             >
               <Link to="/register">
                 <span
