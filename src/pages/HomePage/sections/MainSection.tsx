@@ -1,126 +1,69 @@
+import Card from "@/components/Card";
 import ContainerWrapper from "@/components/ContainerWrapper";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { FaHospital } from "react-icons/fa";
+
+const recipes = [
+  {
+    title: "Macarrão Carbonara",
+    imageUrl: "/images/carbonara.png",
+    description: "Delicioso macarrão com molho cremoso e pedaços de bacon.",
+    tags: ["#italiana", "#massa", "#jantar"],
+  },
+  {
+    title: "Frango Assado",
+    imageUrl: "/images/frango_assado.png",
+    description:
+      "Frango temperado e assado, perfeito para um almoço em família.",
+    tags: ["#aves", "#assado", "#almoço"],
+  },
+  {
+    title: "Torta de Limão",
+    imageUrl: "/images/torta_limao.png",
+    description: "Sobremesa refrescante com sabor intenso de limão.",
+    tags: ["#sobremesa", "#doce", "#limão"],
+  },
+  {
+    title: "Salada Caesar",
+    imageUrl: "/images/salada_caesar.png",
+    description:
+      "Salada clássica com molho caesar, croutons e queijo parmesão.",
+    tags: ["#salada", "#leve", "#jantar"],
+  },
+  {
+    title: "Bolo de Chocolate",
+    imageUrl: "/images/bolo_chocolate.png",
+    description: "Bolo macio e úmido com cobertura de chocolate.",
+    tags: ["#sobremesa", "#doce", "#chocolate"],
+  },
+  {
+    title: "Sopa de Legumes",
+    imageUrl: "/images/sopa_legumes.png",
+    description: "Sopa nutritiva e reconfortante com uma variedade de legumes.",
+    tags: ["#sopa", "#saudável", "#vegano"],
+  },
+];
 
 const MainSection = () => {
   return (
-    // create gradient
-
-    <ContainerWrapper
-      className="relative flex-col items-start m-auto align-middle   
-    
-    "
-    >
-      <div className="flex flex-col  my-16  justify-center items-start  w-full h-full">
-        <div className="items-start">
-          <p className="text-base font-semibold tracking-tight text-green-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          </p>
-          <h1 className="text-4xl font-semibold tracking-tight text-gray-800 lg:text-5xl  h-20 ">
-            Lorem ipsum dolor
-          </h1>
-          <p
-            className=" mt-8  tracking-tight  text-green-500
-                  font-normal text-justify text-xl"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            obcaecati, temporibus, doloribus, recusandae corporis quidem quaerat
-            molestias odio iste quas rem. Ratione adipisci nulla beatae ullam
-            autem eum unde quaerat!
-          </p>
-        </div>
-      </div>
-
-      <div className="relative items-start w-full px-5 py-4  ">
-        <div className="grid grid-cols-1 gap-8 py-15 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 ml-[100px] my-5">
-          <Card className="border-none shadow-lg">
-            <CardHeader>
-              <CardTitle>
-                <FaHospital className="text-green-500" />
-              </CardTitle>
-              <CardDescription className="text-green-500 font-semibold text-base">
-                Atendimento personalizado
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-gray-500 font-bold text-2xl">
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p className="text-gray-600  text-base text-justify ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi obcaecati, temporibus, doloribus,
-              </p>
-            </CardFooter>
-          </Card>
-
-          <Card className="border-none shadow-lg">
-            <CardHeader>
-              <CardTitle>
-                <FaHospital className="text-green-500" />
-              </CardTitle>
-              <CardDescription className="text-green-500 font-semibold text-base">
-                Atendimento personalizado
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-gray-500 font-bold text-2xl">
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p className="text-gray-600  text-base text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi obcaecati, temporibus, doloribus,
-              </p>
-            </CardFooter>
-          </Card>
-        </div>
-
-        <div className="grid grid-cols-1 gap-8 py-15 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 ml-[100px]">
-          <Card className="border-none shadow-lg">
-            <CardHeader>
-              <CardTitle>
-                <FaHospital className="text-green-500" />
-              </CardTitle>
-              <CardDescription className="text-green-500 font-semibold text-base">
-                Atendimento personalizado
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-gray-500 font-bold text-2xl">
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p className="text-gray-600  text-base text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi obcaecati, temporibus, doloribus,
-              </p>
-            </CardFooter>
-          </Card>
-          <Card className="border-none shadow-lg">
-            <CardHeader>
-              <CardTitle>
-                <FaHospital className="text-green-500" />
-              </CardTitle>
-              <CardDescription className="text-green-500 font-semibold text-base">
-                Atendimento personalizado
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-gray-500 font-bold text-2xl">
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p className="text-gray-600  text-base text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi obcaecati, temporibus, doloribus,
-              </p>
-            </CardFooter>
-          </Card>
-        </div>
+    <ContainerWrapper className="relative flex flex-col  m-auto">
+      <h1 className="text-4xl font-semibold text-start text-color-apple-logo lg:text-5xl">
+        Receitas
+      </h1>
+      <p className="text-gray-700 text-start mt-4">
+        Aqui você encontra uma seleção das melhores receitas para preparar em
+        casa, desde pratos simples e rápidos até refeições sofisticadas e
+        elaboradas. Aproveite e descubra novos sabores e técnicas que vão
+        transformar sua cozinha em um verdadeiro restaurante!
+      </p>
+      <div className="grid grid-cols-1 gap-6 mt-12 lg:grid-cols-3 lg:gap-12">
+        {recipes.map((recipe, index) => (
+          <Card
+            key={index}
+            title={recipe.title}
+            imageUrl={recipe.imageUrl}
+            description={recipe.description}
+            tags={recipe.tags}
+          />
+        ))}
       </div>
     </ContainerWrapper>
   );
