@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import ContainerWrapper from "@/components/ContainerWrapper";
+import Typography from "@/components/Typography";
 
 const recipes = [
   {
@@ -45,9 +46,8 @@ const recipes = [
 const MainSection = () => {
   return (
     <ContainerWrapper className="relative flex flex-col  m-auto">
-      <h1 className="text-4xl font-semibold text-start text-color-apple-logo lg:text-5xl">
-        Receitas
-      </h1>
+      <Typography>Receitas</Typography>
+
       <p className="text-gray-700 text-start mt-4">
         Aqui você encontra uma seleção das melhores receitas para preparar em
         casa, desde pratos simples e rápidos até refeições sofisticadas e

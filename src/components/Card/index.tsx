@@ -1,3 +1,7 @@
+import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 interface ICardProps {
   title: string;
   imageUrl: string;
@@ -6,10 +10,24 @@ interface ICardProps {
 }
 
 const Card = ({ title, imageUrl, description, tags }: ICardProps) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start({ scale: 1 });
+    } else {
+      controls.start({ scale: 0.9 });
+    }
+  }, [controls, inView]);
+
   return (
-    <div
-      className="max-w-sm rounded overflow-hidden shadow-lg rounded-2xl
-    "
+    <motion.div
+      ref={ref}
+      initial={{ scale: 0.9 }}
+      animate={controls}
+      transition={{ duration: 0.3 }}
+      className="max-w-sm overflow-hidden shadow-lg rounded-2xl"
     >
       <img className="w-full" src={imageUrl} alt={title} />
       <div className="px-6 py-4">
@@ -26,7 +44,7 @@ const Card = ({ title, imageUrl, description, tags }: ICardProps) => {
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
