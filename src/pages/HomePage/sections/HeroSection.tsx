@@ -134,16 +134,12 @@ const HeroSection = () => {
             </div>
           </div>
         </ContainerWrapper>
-        <div
-          className="absolute bottom-[-30px] right-[-30px] hidden lg:block xl:block 2xl:block 
-      
-      "
-        >
+        <div className="absolute bottom-[-30px] right-[0px] hidden lg:block xl:block 2xl:block">
           <Icon />
         </div>
       </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
         <path
           fill="#1ADC58"
           fill-opacity="1"

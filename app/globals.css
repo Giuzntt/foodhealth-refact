@@ -75,4 +75,20 @@
     @apply bg-background text-foreground;
     background-color: #f0fdf4;
   }
+
+  /* Adicione isso ao seu CSS personalizado */
+  ::-webkit-scrollbar {
+    width: 10px; /* largura da barra de rolagem */
+    background-color: #f0fdf4; /* cor de fundo da barra de rolagem */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #4caf50; /* cor do polegar da barra de rolagem (verde) */
+    border-radius: 5px; /* borda arredondada do polegar */
+  }
+
+  /* Para navegadores que suportam a propriedade scrollbar-color */
+  ::-webkit-scrollbar {
+    scrollbar-color: #4caf50 #f0fdf4; /* cor do polegar e fundo da barra de rolagem */
+  }
 }
